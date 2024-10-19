@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'developer/staff_uuid_php',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '35fec81f225b78596629cfd2ce62341edbf31314',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -18,6 +18,15 @@
             'install_path' => __DIR__ . '/../brianium/paratest',
             'aliases' => array(),
             'dev_requirement' => true,
+        ),
+        'brick/math' => array(
+            'pretty_version' => '0.12.1',
+            'version' => '0.12.1.0',
+            'reference' => 'f510c0a40911935b77b86859eb5223d58d660df1',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../brick/math',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'clue/ndjson-react' => array(
             'pretty_version' => 'v1.3.0',
@@ -56,9 +65,9 @@
             'dev_requirement' => true,
         ),
         'developer/staff_uuid_php' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '35fec81f225b78596629cfd2ce62341edbf31314',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -328,6 +337,24 @@
                 0 => '1.0|2.0|3.0',
             ),
         ),
+        'ramsey/collection' => array(
+            'pretty_version' => '2.0.0',
+            'version' => '2.0.0.0',
+            'reference' => 'a4b48764bfbb8f3a6a4d1aeb1a35bb5e9ecac4a5',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../ramsey/collection',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'ramsey/uuid' => array(
+            'pretty_version' => '4.7.6',
+            'version' => '4.7.6.0',
+            'reference' => '91039bc1faa45ba123c4328958e620d382ec7088',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../ramsey/uuid',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'react/cache' => array(
             'pretty_version' => 'v1.2.0',
             'version' => '1.2.0.0',
@@ -390,6 +417,12 @@
             'install_path' => __DIR__ . '/../react/stream',
             'aliases' => array(),
             'dev_requirement' => true,
+        ),
+        'rhumsaa/uuid' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '4.7.6',
+            ),
         ),
         'sebastian/cli-parser' => array(
             'pretty_version' => '2.0.1',

@@ -23,6 +23,7 @@ class ComposerStaticInitfa728a449d8801e385d26415a4f95d60
         '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
         'f83ed111c2f97a0449abf067f157f418' => __DIR__ . '/..' . '/pestphp/pest/src/Functions.php',
         '7d2876738dc0328edeb8a103c76cd8e7' => __DIR__ . '/..' . '/pestphp/pest/src/Pest.php',
+        'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -67,6 +68,8 @@ class ComposerStaticInitfa728a449d8801e385d26415a4f95d60
             'React\\Dns\\' => 10,
             'React\\ChildProcess\\' => 19,
             'React\\Cache\\' => 12,
+            'Ramsey\\Uuid\\' => 12,
+            'Ramsey\\Collection\\' => 18,
         ),
         'P' => 
         array (
@@ -101,7 +104,6 @@ class ComposerStaticInitfa728a449d8801e385d26415a4f95d60
         'D' => 
         array (
             'Doctrine\\Deprecations\\' => 22,
-            'Developer\\StaffUuidPhp\\' => 23,
             'DeepCopy\\' => 9,
         ),
         'C' => 
@@ -111,14 +113,22 @@ class ComposerStaticInitfa728a449d8801e385d26415a4f95d60
             'Composer\\Pcre\\' => 14,
             'Clue\\React\\NDJson\\' => 18,
         ),
+        'B' => 
+        array (
+            'Brick\\Math\\' => 11,
+        ),
+        'A' => 
+        array (
+            'App\\' => 4,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
         'Whoops\\' => 
         array (
@@ -224,6 +234,14 @@ class ComposerStaticInitfa728a449d8801e385d26415a4f95d60
         array (
             0 => __DIR__ . '/..' . '/react/cache/src',
         ),
+        'Ramsey\\Uuid\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ramsey/uuid/src',
+        ),
+        'Ramsey\\Collection\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ramsey/collection/src',
+        ),
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/src',
@@ -288,10 +306,6 @@ class ComposerStaticInitfa728a449d8801e385d26415a4f95d60
         array (
             0 => __DIR__ . '/..' . '/doctrine/deprecations/lib/Doctrine/Deprecations',
         ),
-        'Developer\\StaffUuidPhp\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-        ),
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
@@ -311,6 +325,14 @@ class ComposerStaticInitfa728a449d8801e385d26415a4f95d60
         'Clue\\React\\NDJson\\' => 
         array (
             0 => __DIR__ . '/..' . '/clue/ndjson-react/src',
+        ),
+        'Brick\\Math\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/brick/math/src',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
         ),
     );
 

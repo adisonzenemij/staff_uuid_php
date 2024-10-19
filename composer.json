@@ -21,7 +21,9 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {},
+    "require": {
+        "ramsey/uuid": "^4.7"
+    },
     "config": {
         "allow-plugins": {
             "pestphp/pest-plugin": true
