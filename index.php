@@ -1,21 +1,27 @@
 <?php
     # Directorio Proyecto
-    define('DIRSTORAGE', __DIR__);
-    echo "Directorio:" . " " . DIRSTORAGE . '<br/>';
-    require DIRSTORAGE . '/vendor/autoload.php';
-
-    # Importar la clase de utilidades
-    use App\Utils\IdentifiedUtil;
-
-    # Llamar al método para generar un UUID
-    $uuidTrigger = IdentifiedUtil::trigger() . "<br/>";
-
-    # Imprimir el UUID generado
-    echo "UUID:" . " " . $uuidTrigger;
-
-    # Llamar al método para generar un UUID
-    $uuidShort = IdentifiedUtil::short(25, 5);
-
-    # Imprimir el UUID generado
-    echo "UUID:" . " " . $uuidShort . "<br/>";
+    define('DIR', __DIR__);
     
+    # Incluir archivos de configuraciones
+    require DIR . '/config/autoload.php';
+    require DIR . '/vendor/autoload.php';
+    
+    # Cargar variables
+    use App\Library\Envmnt;
+    # Cargar el enrutador
+    use App\Core\Load;
+    # Cargar el enrutador
+    use App\Core\Router;
+    
+    # Crear instancia del entorno
+    $envmnt = new Envmnt();
+    # Cargar variables de entorno
+    $envmnt->execute();
+    
+    # Crear instancia del enrutador
+    $router = new Router();
+    # Crear instancia para cargar las rutas
+    $config = new Load($router);
+    # Manejar la solicitud
+    $router->handleRequest();
+?>

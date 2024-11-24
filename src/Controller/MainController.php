@@ -2,7 +2,7 @@
     namespace App\Controller;
 
     use App\Core\Render;
-    use App\Library\Mailer;
+    use App\Library\Identified;
 
     class MainController {
         final public function __construct() {}
@@ -14,15 +14,24 @@
             $templates = ['main'];
             # Renderiar plantilla y configuracion
             Render::view($templates, $data);
-            # Ejecutar correo electrónico
-            $this->testing();
+            # Generar UUID oficial
+            $this->trigger();
+            # Generar UUID personalizado
+            $this->short();
         }
 
-        public function testing() {
-            # Enviar correo electronico
-            $result = Mailer::sending();
-            # Imprimir resultado
-            echo $result;
+        public function trigger() {
+            # Generar UUID oficial
+            $uuidTrigger = Identified::trigger() . "<br/>";
+            # Imprimir el UUID generado
+            echo "UUID:" . " " . $uuidTrigger;
+        }
+
+        public function short() {
+            # Generar UUID personalizado
+            $uuidShort = Identified::short(25, 5);
+            # Imprimir el UUID generado
+            echo "UUID:" . " " . $uuidShort . "<br/>";
         }
     }
 ?>
