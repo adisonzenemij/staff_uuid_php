@@ -1,5 +1,5 @@
 <?php
-    namespace App\Utils;
+    namespace App\Library;
 
     use Ramsey\Uuid\Uuid;
 
@@ -28,3 +28,4 @@
             return $uuidWithHyphens;
         }
     }
+?>
