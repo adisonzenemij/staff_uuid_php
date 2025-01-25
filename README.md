@@ -20,8 +20,6 @@ Actualizar Proyecto: composer dump-autoload
 ## Configuración
 ```yml
 Environment: composer require vlucas/phpdotenv
-```
-```yml
 UUID: composer require ramsey/uuid
 ```
 
